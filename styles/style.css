@@ -1,0 +1,120 @@
+/* #region General */
+
+:root {
+    --main-black: #0a0a0a;
+    --main-white: #fff;
+    --title-black: #111;
+    --subtitle-black: #222;
+    --main-gray: #818181;
+    --main-purple: #7620df;
+    --dark-purple: #4A148C;
+    /* language colors */
+    --js-language-color: #f1e05a;
+    --cs-language-color: #178600;
+    --cpp-language-color: #f34b7d;
+    --python-language-color: #3572a5;
+}
+
+@font-face {
+    font-family: "RosemaryRoman";
+    src: url("/assets/Rosemary-Roman.woff") format("woff"),
+         url("/assets/Rosemary\ Roman.ttf") format("truetype");
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+/* #endregion */
+
+/* #region Header */
+
+.header {
+    height: 5%;
+    /* min-height: 100px; */
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.home-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+a.home-logo>img {
+    height: 100px;
+}
+
+/* #endregion */
+
+/* #region Content */
+
+.content {
+    height: 90%;
+    max-width: 1200px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    /* REMOVE */
+    visibility: hidden;
+}
+
+.nav-bar-item {
+    margin: 25px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+h2 {
+    font-family: "RosemaryRoman";
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 25pt;
+}
+
+blockquote::before {
+    content: "\00ab";
+}
+
+blockquote::after {
+    content: "\00bb";
+}
+
+/* #endregion */
+
+/* #region Footer */
+
+.footer {
+    height: 5%;
+    min-height: 50px;
+    max-width: 1200px;
+}
+
+/* #endregion */
