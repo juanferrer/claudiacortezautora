@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "RosemaryRoman";
+    src: url("/assets/fonts/Rosemary-Roman.woff") format("woff"),
+         url("/assets/fonts/Rosemary\ Roman.ttf") format("truetype");
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    max-width: 1200px;;
+}
+
+h2 {
+    font-family: "RosemaryRoman";
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 30px;
+}
+
+blockquote::before {
+    content: "\00ab";
+}
+
+blockquote::after {
+    content: "\00bb";
+}

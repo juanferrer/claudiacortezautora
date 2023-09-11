@@ -1,0 +1,10 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials a {
+    margin-left: 10px;
+    margin-right: 10px;
+}

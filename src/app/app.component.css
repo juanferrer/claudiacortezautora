@@ -1,0 +1,11 @@
+app-top-bar {
+    height: 150px;
+}
+
+.container {
+    height: calc(100vh - 200px);
+}
+
+navigation-bar {
+    height: 50px;
+}
